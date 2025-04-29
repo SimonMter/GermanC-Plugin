@@ -3,7 +3,7 @@
   "patterns": [
       {
           "name": "keyword.control.germanc",
-          "match": "\\b(ganzzahl|zeichen|zurück|wenn|sonst|während|für|leer|breche|fortsetzen|strukturen|union|enum|typedef|volatile|register|inline)\\b"
+          "match": "\\b(ganzzahl|fließkommazahl|zeichen|zurück|wenn|sonst|während|für|leer|breche|fortsetzen|strukturen|union|enum|typedef|volatile|register|inline)\\b"
       },
       {
           "name": "keyword.constant.germanc",

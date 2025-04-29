@@ -101,47 +101,47 @@
     },
     "Equality Check": {
         "prefix": "gleich",
-        "body": ["${1:variable1} == ${2:variable2}"],
+        "body": ["gleich"],
         "description": "Equality check"
     },
     "Not Equal Check": {
         "prefix": "nicht_gleich",
-        "body": ["${1:variable1} != ${2:variable2}"],
+        "body": ["nicht_gleich"],
         "description": "Not equal check"
     },
     "Greater Than Check": {
         "prefix": "größer",
-        "body": ["${1:variable1} > ${2:variable2}"],
+        "body": ["größer"],
         "description": "Greater than check"
     },
     "Less Than Check": {
         "prefix": "kleiner",
-        "body": ["${1:variable1} < ${2:variable2}"],
+        "body": ["kleiner"],
         "description": "Less than check"
     },
     "Greater or Equal Check": {
         "prefix": "größer_oder_gleich",
-        "body": ["${1:variable1} >= ${2:variable2}"],
+        "body": ["größer_oder_gleich"],
         "description": "Greater or equal check"
     },
     "Less or Equal Check": {
         "prefix": "kleiner_oder_gleich",
-        "body": ["${1:variable1} <= ${2:variable2}"],
+        "body": ["kleiner_oder_gleich"],
         "description": "Less or equal check"
     },
     "Logical AND": {
         "prefix": "und",
-        "body": ["${1:condition1} && ${2:condition2}"],
+        "body": ["und"],
         "description": "Logical AND"
     },
     "Logical OR": {
         "prefix": "oder",
-        "body": ["${1:condition1} || ${2:condition2}"],
+        "body": ["oder"],
         "description": "Logical OR"
     },
     "Logical NOT": {
         "prefix": "nicht",
-        "body": ["!${1:condition}"],
+        "body": ["nicht"],
         "description": "Logical NOT"
     },
     "Print Function": {
@@ -158,5 +158,112 @@
         "prefix": "hole",
         "body": ["hole();"],
         "description": "Get character (getchar)"
+    },
+    "True Constant": {
+        "prefix": "wahr",
+        "body": ["wahr"],
+        "description": "Boolean true constant"
+    },
+    "False Constant": {
+        "prefix": "falsch",
+        "body": ["falsch"],
+        "description": "Boolean false constant"
+    },
+    "Null Constant": {
+        "prefix": "null",
+        "body": ["null"],
+        "description": "Null constant"
+    },
+    "Const Keyword": {
+        "prefix": "konstant",
+        "body": ["konstant ${1:variableName} = ${2:value};"],
+        "description": "Declare a constant variable"
+    },
+    "Extern Keyword": {
+        "prefix": "extern",
+        "body": ["extern ${1:type} ${2:variableName};"],
+        "description": "Extern variable declaration"
+    },
+    "Static Keyword": {
+        "prefix": "statisch",
+        "body": ["statisch ${1:type} ${2:variableName} = ${3:value};"],
+        "description": "Static variable declaration"
+    },
+    "String Keyword": {
+        "prefix": "zeichenfolge",
+        "body": ["zeichenfolge ${1:variableName} = \"${2:value}\";"],
+        "description": "String declaration"
+    },
+    "Include Directive": {
+        "prefix": "einschließen",
+        "body": ["#einschließen <${1:header.h}>"],
+        "description": "Include a header file"
+    },
+    "Define Directive": {
+        "prefix": "definieren",
+        "body": ["#definieren ${1:MACRO} ${2:value}"],
+        "description": "Define a macro"
+    },
+    "Struct Keyword": {
+        "prefix": "strukturen",
+        "body": [
+            "strukturen ${1:StructName} {",
+            "    ${2:// members}",
+            "};"
+        ],
+        "description": "Define a struct"
+    },
+    "Union Keyword": {
+        "prefix": "union",
+        "body": [
+            "union ${1:UnionName} {",
+            "    ${2:// members}",
+            "};"
+        ],
+        "description": "Define a union"
+    },
+    "Enum Keyword": {
+        "prefix": "enum",
+        "body": [
+            "enum ${1:EnumName} {",
+            "    ${2:// values}",
+            "};"
+        ],
+        "description": "Define an enum"
+    },
+    "Typedef Keyword": {
+        "prefix": "typedef",
+        "body": ["typedef ${1:existingType} ${2:newType};"],
+        "description": "Define a typedef"
+    },
+    "Volatile Keyword": {
+        "prefix": "volatile",
+        "body": ["volatile ${1:type} ${2:variableName};"],
+        "description": "Volatile variable declaration"
+    },
+    "Register Keyword": {
+        "prefix": "register",
+        "body": ["register ${1:type} ${2:variableName};"],
+        "description": "Register variable declaration"
+    },
+    "Inline Keyword": {
+        "prefix": "inline",
+        "body": ["inline ${1:returnType} ${2:functionName}(${3:parameters}) {", "    ${4:// code}", "}"],
+        "description": "Inline function definition"
+    },
+    "Single Line Comment": {
+        "prefix": "kommentare",
+        "body": ["// ${1:comment}"],
+        "description": "Single line comment"
+    },
+    "Block Comment": {
+        "prefix": "kommentare_block",
+        "body": ["/* ${1:comment} */"],
+        "description": "Block comment"
+    },
+    "Block Comment End": {
+        "prefix": "kommentare_block_ende",
+        "body": ["*/"],
+        "description": "End of block comment"
     }
 }
