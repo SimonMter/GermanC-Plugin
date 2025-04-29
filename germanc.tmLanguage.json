@@ -1,0 +1,43 @@
+{
+  "scopeName": "source.germanc",
+  "patterns": [
+      {
+          "name": "keyword.control.germanc",
+          "match": "\\b(ganzzahl|zeichen|zurück|wenn|sonst|während|für|leer|breche|fortsetzen)\\b"
+      },
+      {
+          "name": "comment.line.double-slash.germanc",
+          "match": "//.*$"
+      },
+      {
+          "name": "string.quoted.double.germanc",
+          "match": "\".*?\""
+      },
+      {
+          "name": "variable.other.germanc",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+      },
+      {
+          "name": "storage.type.germanc",
+          "match": "\\b(ganzzahl|zeichen|leer)\\b"
+      },
+      {
+          "name": "keyword.operator.germanc",
+          "match": "[+\\-*/=<>!&|]"
+      },
+      {
+          "name": "constant.numeric.germanc",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+      },
+      {
+          "name": "entity.name.function.germanc",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*(?=\\()"
+      },
+      {
+          "name": "constant.language.germanc",
+          "match": "\\b(true|false|null)\\b"
+      }
+  ],
+  "repository": {},
+  "name": "germanc"
+}

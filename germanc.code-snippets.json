@@ -1,0 +1,162 @@
+{
+    "Integer Declaration": {
+        "prefix": "ganzzahl",
+        "body": ["ganzzahl ${1:variableName} = ${2:value};"],
+        "description": "Declare an integer variable"
+    },
+    "Character Declaration": {
+        "prefix": "zeichen",
+        "body": ["zeichen ${1:variableName} = '${2:char}';"],
+        "description": "Declare a character variable"
+    },
+    "Return Statement": {
+        "prefix": "zurück",
+        "body": ["zurück ${1:value};"],
+        "description": "Return a value"
+    },
+    "If Statement": {
+        "prefix": "wenn",
+        "body": [
+            "wenn (${1:condition}) {",
+            "    ${2:// code}",
+            "}"
+        ],
+        "description": "If statement"
+    },
+    "Else Statement": {
+        "prefix": "sonst",
+        "body": [
+            "sonst {",
+            "    ${1:// code}",
+            "}"
+        ],
+        "description": "Else statement"
+    },
+    "While Loop": {
+        "prefix": "während",
+        "body": [
+            "während (${1:condition}) {",
+            "    ${2:// code}",
+            "}"
+        ],
+        "description": "While loop"
+    },
+    "For Loop": {
+        "prefix": "für",
+        "body": [
+            "für (${1:ganzzahl i = 0}; ${2:i < n}; ${3:i++}) {",
+            "    ${4:// code}",
+            "}"
+        ],
+        "description": "For loop"
+    },
+    "Void Function": {
+        "prefix": "leer",
+        "body": [
+            "leer ${1:functionName}(${2:parameters}) {",
+            "    ${3:// code}",
+            "}"
+        ],
+        "description": "Void function"
+    },
+    "Main Function": {
+        "prefix": "haupt",
+        "body": [
+            "ganzzahl haupt() {",
+            "    ${1:// code}",
+            "    zurück 0;",
+            "}"
+        ],
+        "description": "Main function"
+    },
+    "Break Statement": {
+        "prefix": "breche",
+        "body": ["breche;"],
+        "description": "Break statement"
+    },
+    "Continue Statement": {
+        "prefix": "fortsetzen",
+        "body": ["fortsetzen;"],
+        "description": "Continue statement"
+    },
+    "Float Declaration": {
+        "prefix": "fließkommazahl",
+        "body": ["fließkommazahl ${1:variableName} = ${2:value};"],
+        "description": "Declare a float variable"
+    },
+    "Double Declaration": {
+        "prefix": "doppelt",
+        "body": ["doppelt ${1:variableName} = ${2:value};"],
+        "description": "Declare a double variable"
+    },
+    "Long Declaration": {
+        "prefix": "lang",
+        "body": ["lang ${1:variableName} = ${2:value};"],
+        "description": "Declare a long variable"
+    },
+    "Short Declaration": {
+        "prefix": "kurz",
+        "body": ["kurz ${1:variableName} = ${2:value};"],
+        "description": "Declare a short variable"
+    },
+    "Equality Check": {
+        "prefix": "gleich",
+        "body": ["${1:variable1} == ${2:variable2}"],
+        "description": "Equality check"
+    },
+    "Not Equal Check": {
+        "prefix": "nicht_gleich",
+        "body": ["${1:variable1} != ${2:variable2}"],
+        "description": "Not equal check"
+    },
+    "Greater Than Check": {
+        "prefix": "größer",
+        "body": ["${1:variable1} > ${2:variable2}"],
+        "description": "Greater than check"
+    },
+    "Less Than Check": {
+        "prefix": "kleiner",
+        "body": ["${1:variable1} < ${2:variable2}"],
+        "description": "Less than check"
+    },
+    "Greater or Equal Check": {
+        "prefix": "größer_oder_gleich",
+        "body": ["${1:variable1} >= ${2:variable2}"],
+        "description": "Greater or equal check"
+    },
+    "Less or Equal Check": {
+        "prefix": "kleiner_oder_gleich",
+        "body": ["${1:variable1} <= ${2:variable2}"],
+        "description": "Less or equal check"
+    },
+    "Logical AND": {
+        "prefix": "und",
+        "body": ["${1:condition1} && ${2:condition2}"],
+        "description": "Logical AND"
+    },
+    "Logical OR": {
+        "prefix": "oder",
+        "body": ["${1:condition1} || ${2:condition2}"],
+        "description": "Logical OR"
+    },
+    "Logical NOT": {
+        "prefix": "nicht",
+        "body": ["!${1:condition}"],
+        "description": "Logical NOT"
+    },
+    "Print Function": {
+        "prefix": "drucke",
+        "body": ["drucke(\"${1:message}\");"],
+        "description": "Print function (printf)"
+    },
+    "Scan Function": {
+        "prefix": "scanner",
+        "body": ["scanner(\"${1:format}\", &${2:variable});"],
+        "description": "Scan function (scanf)"
+    },
+    "Get Character": {
+        "prefix": "hole",
+        "body": ["hole();"],
+        "description": "Get character (getchar)"
+    }
+}
