@@ -3,11 +3,34 @@
   "patterns": [
       {
           "name": "keyword.control.germanc",
-          "match": "\\b(ganzzahl|zeichen|zurück|wenn|sonst|während|für|leer|breche|fortsetzen)\\b"
+          "match": "\\b(ganzzahl|zeichen|zurück|wenn|sonst|während|für|leer|breche|fortsetzen|strukturen|union|enum|typedef|volatile|register|inline)\\b"
+      },
+      {
+          "name": "keyword.constant.germanc",
+          "match": "\\b(wahr|falsch|null)\\b"
+      },
+      {
+          "name": "keyword.storage.germanc",
+          "match": "\\b(konstant|extern|statisch|zeichenfolge)\\b"
+      },
+      {
+          "name": "meta.preprocessor.germanc",
+          "match": "\\b(einschließen|definieren)\\b"
       },
       {
           "name": "comment.line.double-slash.germanc",
           "match": "//.*$"
+      },
+      {
+          "name": "comment.block.germanc",
+          "begin": "/\\*",
+          "end": "\\*/",
+          "patterns": [
+              {
+                  "name": "comment.block.documentation.germanc",
+                  "match": "\\*\\*.*"
+              }
+          ]
       },
       {
           "name": "string.quoted.double.germanc",
