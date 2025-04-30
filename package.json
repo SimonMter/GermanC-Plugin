@@ -4,6 +4,11 @@
     "description": "Syntax highlighting for GermanC language",
     "version": "0.0.1",
     "publisher": "retireJS",
+    "main": "./extension.js",
+    "activationEvents": [
+      "onLanguage:germanc"
+    ],
+
     "engines": {
       "vscode": "^1.50.0"
     },

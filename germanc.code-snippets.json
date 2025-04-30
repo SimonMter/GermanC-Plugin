@@ -60,7 +60,7 @@
         "description": "Void function"
     },
     "Main Function": {
-        "prefix": "haupt",
+        "prefix": "Haupt",
         "body": [
             "ganzzahl haupt() {",
             "    ${1:// code}",
@@ -145,8 +145,8 @@
         "description": "Logical NOT"
     },
     "Print Function": {
-        "prefix": "drucke",
-        "body": ["drucke(\"${1:message}\");"],
+        "prefix": "schreibe",
+        "body": ["schreibe(\"${1:message}\");"],
         "description": "Print function (printf)"
     },
     "Scan Function": {
@@ -195,8 +195,8 @@
         "description": "String declaration"
     },
     "Include Directive": {
-        "prefix": "einschließen",
-        "body": ["#einschließen <${1:header.h}>"],
+        "prefix": "beinhalte",
+        "body": ["#beinhalte <${1:header.h}>"],
         "description": "Include a header file"
     },
     "Define Directive": {
@@ -252,18 +252,23 @@
         "description": "Inline function definition"
     },
     "Single Line Comment": {
-        "prefix": "kommentare",
-        "body": ["// ${1:comment}"],
+        "prefix": "kommentar",
+        "body": ["kommentar"],
         "description": "Single line comment"
     },
     "Block Comment": {
-        "prefix": "kommentare_block",
-        "body": ["/* ${1:comment} */"],
+        "prefix": "kommentarblock",
+        "body": ["kommentarblock"],
         "description": "Block comment"
     },
     "Block Comment End": {
-        "prefix": "kommentare_block_ende",
-        "body": ["*/"],
+        "prefix": "kommentar_block_ende",
+        "body": ["kommentar_block_ende"],
         "description": "End of block comment"
+    },
+    "Block Comment Start": {
+        "prefix": "kommentar_block_anfang",
+        "body": ["kommentar_block_anfang"],
+        "description": "Start of block comment"
     }
 }

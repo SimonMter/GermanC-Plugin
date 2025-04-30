@@ -1,17 +1,24 @@
 {
     "comments": {
-      "lineComment": "//"
+      "lineComment": "//",
+      "lineComment": "Kommantar"
     },
     "brackets": [
       ["{", "}"],
       ["[", "]"],
-      ["(", ")"]
+      ["(", ")"],
+      ["klammer_auf", "klammer_zu"],
+      ["eckige_klammer_auf", "eckige_klammer_zu"],
+      ["geschweifte_klammer_auf", "geschweifte_klammer_zu"]
     ],
     "autoClosingPairs": [
       { "open": "{", "close": "}" },
       { "open": "[", "close": "]" },
       { "open": "(", "close": ")" },
-      { "open": "\"", "close": "\"" }
+      { "open": "\"", "close": "\"" },
+      { "open": "klammer_auf", "close": "klammer_zu" },
+      { "open": "eckige_klammer_auf", "close": "eckige_klammer_zu" },
+      { "open": "geschweifte_klammer_auf", "close": "geschweifte_klammer_zu" },
     ]
   }
   
