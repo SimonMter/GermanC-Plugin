@@ -1,40 +1,38 @@
 {
-    "name": "germanc",
-    "displayName": "GermanC Syntax Highlighting & Tab Completion",
-    "description": "Syntax highlighting for GermanC language",
-    "version": "0.0.1",
-    "publisher": "retireJS",
-    "main": "./extension.js",
-    "activationEvents": [
-      "onLanguage:germanc"
+  "name": "germanc",
+  "displayName": "GermanC Syntax Highlighting & Tab Completion",
+  "description": "Syntax highlighting for GermanC language",
+  "version": "0.0.1",
+  "publisher": "retireJS",
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:germanc"
+  ],
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "germanc",
+        "aliases": ["GermanC", "germanc"],
+        "extensions": [".gc"],
+        "configuration": "./language-configuration.json"
+      }
     ],
-
-    "engines": {
-      "vscode": "^1.50.0"
-    },
-    "categories": ["Programming Languages"],
-    "contributes": {
-      "languages": [
-        {
-          "id": "germanc",
-          "aliases": ["GermanC", "germanc"],
-          "extensions": [".gc"],
-          "configuration": "./language-configuration.json"
-        }
-      ],
-      "grammars": [
-        {
-          "language": "germanc",
-          "scopeName": "source.germanc",
-          "path": "./germanc.tmLanguage.json"
-        }
-      ],
-      "snippets": [
-            {
-                "language": "germanc",
-                "path": "./germanc.code-snippets.json"
-            }
-        ]
-    }
+    "grammars": [
+      {
+        "language": "germanc",
+        "scopeName": "source.germanc",
+        "path": "./germanc.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "germanc",
+        "path": "./germanc.code-snippets.json"
+      }
+    ]
   }
-  
+}

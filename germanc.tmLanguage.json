@@ -1,67 +1,71 @@
 {
-    "scopeName": "source.germanc",
-    "patterns": [
-      {
-        "name": "keyword.control.germanc",
-        "match": "\\b(zurück|wenn|sonst|während|für|breche|fortsetzen|gleich|nicht_gleich|größer|kleiner|kleiner_oder_gleich|größer_oder_gleich|und|oder|nicht|strukturen|union|enum|typedef|volatile|register|inline)\\b"
-      },
-      {
-        "name": "keyword.constant.germanc",
-        "match": "\\b(wahr|falsch|null)\\b"
-      },
-      {
-        "name": "keyword.storage.germanc",
-        "match": "\\b(konstant|extern|statisch|zeichenfolge)\\b"
-      },
-      {
-        "name": "meta.preprocessor.germanc",
-        "match": "\\b(beinhalte|definieren)\\b"
-      },
-      {
-        "name": "comment.line.double-slash.germanc",
-        "match": "//.*$"
-      },
-      {
-        "name": "comment.block.germanc",
-        "begin": "/\\*",
-        "end": "\\*/",
-        "patterns": [
-          {
-            "name": "comment.block.documentation.germanc",
-            "match": "\\*\\*.* | kommentar | kommentar_block | kommentar_block_anfang | kommentar_block_ende"
-          }
-        ]
-      },
-      {
-        "name": "string.quoted.double.germanc",
-        "match": "\".*?\""
-      },
-      {
-        "name": "storage.type.germanc",
-        "match": "\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|zeichen|leer)\\b"
-      },
-      {
-        "name": "variable.other.germanc",
-        "match": "(?<=\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|zeichen|leer)\\s+)\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
-      },
-      {
-        "name": "entity.name.function.germanc",
-        "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*(?=\\()"
-      },
-      {
-        "name": "keyword.operator.germanc",
-        "match": "[+\\-*/=<>!&|]"
-      },
-      {
-        "name": "constant.numeric.germanc",
-        "match": "\\b\\d+(\\.\\d+)?\\b"
-      },
-      {
-        "name": "constant.language.germanc",
-        "match": "\\b(true|false|null)\\b"
-      }
-    ],
-    "repository": {},
-    "name": "germanc"
-  }
-  
+  "scopeName": "source.germanc",
+  "patterns": [
+    {
+      "name": "keyword.control.germanc",
+      "match": "\\b(zurück|soferne|andernfalls|während|durchlaufe|unterbrech|weitergehen|gleich|nicht_gleich|größer|kleiner|kleiner_oder_gleich|größer_oder_gleich|und|oder|nicht|strukturen|union|enum|typedef|volatile|register|inline|blockzeitlich|fallunterscheidung|fall|standardfall|springezu|größewert|unvorhersagbar|ausführen|gemeinspeicher|wertreihe|typbenennung|schnellspeicher|einfügefunktion|vorzeichenfrei|vorzeichenbehaftet)\\b"
+    },
+    {
+      "name": "keyword.constant.germanc",
+      "match": "\\b(wahr|falsch|null)\\b"
+    },
+    {
+      "name": "keyword.storage.germanc",
+      "match": "\\b(konstant|extern|statisch|zeichenfolge)\\b"
+    },
+    {
+      "name": "meta.preprocessor.germanc",
+      "match": "\\b(beinhalte|definieren)\\b"
+    },
+    {
+      "name": "comment.line.double-slash.germanc",
+      "match": "//.*$"
+    },
+    {
+      "name": "comment.block.germanc",
+      "begin": "/\\*",
+      "end": "\\*/",
+      "patterns": [
+        {
+          "name": "comment.block.documentation.germanc",
+          "match": "\\*\\*.* | kommentar | kommentar_block | kommentar_block_anfang | kommentar_block_ende"
+        }
+      ]
+    },
+    {
+      "name": "string.quoted.double.germanc",
+      "match": "\".*?\""
+    },
+    {
+      "name": "storage.type.germanc",
+      "match": "\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|bitzeichen|nichtig)\\b"
+    },
+    {
+      "name": "variable.other.germanc",
+      "match": "(?<=\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|bitzeichen|nichtig)\\s+)\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "entity.name.function.germanc",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*(?=\\()"
+    },
+    {
+      "name": "keyword.operator.germanc",
+      "match": "[+\\-*/=<>!&|]"
+    },
+    {
+      "name": "constant.numeric.germanc",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "name": "constant.language.germanc",
+      "match": "\\b(true|false|null)\\b"
+    },
+    {
+      "name": "keyword.filler.germanc",
+      "match": "\\b(hmm|ehm|halt|tja|nun|eben|schon|irgendwie|sozusagen|quasi|vielleicht|ja|also|naja|achso|bitte|ehrlichgesagt|kurz|jetzt|schließlich|tatsächlich|übrigens|genaugenommen|eigentlich|bedauerlicherweise|sicherlich|notfalls|sowieso|mal ehrlich)\\b"
+    }
+
+  ],
+  "repository": {},
+  "name": "germanc"
+}

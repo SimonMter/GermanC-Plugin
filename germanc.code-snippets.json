@@ -5,8 +5,8 @@
         "description": "Declare an integer variable"
     },
     "Character Declaration": {
-        "prefix": "zeichen",
-        "body": ["zeichen ${1:variableName} = '${2:char}';"],
+        "prefix": "bitzeichen",
+        "body": ["bitzeichen ${1:variableName} = '${2:char}';"],
         "description": "Declare a character variable"
     },
     "Return Statement": {
@@ -15,18 +15,18 @@
         "description": "Return a value"
     },
     "If Statement": {
-        "prefix": "wenn",
+        "prefix": "soferne",
         "body": [
-            "wenn (${1:condition}) {",
+            "soferne (${1:condition}) {",
             "    ${2:// code}",
             "}"
         ],
         "description": "If statement"
     },
     "Else Statement": {
-        "prefix": "sonst",
+        "prefix": "andernfalls",
         "body": [
-            "sonst {",
+            "andernfalls {",
             "    ${1:// code}",
             "}"
         ],
@@ -42,27 +42,27 @@
         "description": "While loop"
     },
     "For Loop": {
-        "prefix": "für",
+        "prefix": "durchlaufe",
         "body": [
-            "für (${1:ganzzahl i = 0}; ${2:i < n}; ${3:i++}) {",
+            "durchlaufe (${1:ganzzahl i = 0}; ${2:i < n}; ${3:i++}) {",
             "    ${4:// code}",
             "}"
         ],
         "description": "For loop"
     },
     "Void Function": {
-        "prefix": "leer",
+        "prefix": "nichtig",
         "body": [
-            "leer ${1:functionName}(${2:parameters}) {",
+            "nichtig ${1:functionName}(${2:parameters}) {",
             "    ${3:// code}",
             "}"
         ],
         "description": "Void function"
     },
     "Main Function": {
-        "prefix": "Haupt",
+        "prefix": "ursprung",
         "body": [
-            "ganzzahl haupt() {",
+            "ganzzahl ursprung() {",
             "    ${1:// code}",
             "    zurück 0;",
             "}"
@@ -70,13 +70,13 @@
         "description": "Main function"
     },
     "Break Statement": {
-        "prefix": "breche",
-        "body": ["breche;"],
+        "prefix": "unterbrech",
+        "body": ["unterbrech;"],
         "description": "Break statement"
     },
     "Continue Statement": {
-        "prefix": "fortsetzen",
-        "body": ["fortsetzen;"],
+        "prefix": "weitergehen",
+        "body": ["weitergehen;"],
         "description": "Continue statement"
     },
     "Float Declaration": {
@@ -194,6 +194,21 @@
         "body": ["zeichenfolge ${1:variableName} = \"${2:value}\";"],
         "description": "String declaration"
     },
+    "Auto Keyword": {
+        "prefix": "blockzeitlich",
+        "body": ["blockzeitlich"],
+        "description": "Auto declaration"
+    },
+    "Switch Keyword": {
+        "prefix": "fallunterscheidung",
+        "body": ["fallunterscheidung"],
+        "description": "Switch"
+    },
+    "Case Keyword": {
+        "prefix": "fall",
+        "body": ["fall"],
+        "description": "Case"
+    },
     "Include Directive": {
         "prefix": "beinhalte",
         "body": ["#beinhalte <${1:header.h}>"],
@@ -213,44 +228,67 @@
         ],
         "description": "Define a struct"
     },
-    "Union Keyword": {
-        "prefix": "union",
-        "body": [
-            "union ${1:UnionName} {",
-            "    ${2:// members}",
-            "};"
-        ],
-        "description": "Define a union"
+    "Vorzeichenfrei Keyword": {
+        "prefix": "vorzeichenfrei",
+        "body": ["vorzeichenfrei"],
+        "description": "Unsigned (sign-free)"
     },
-    "Enum Keyword": {
-        "prefix": "enum",
-        "body": [
-            "enum ${1:EnumName} {",
-            "    ${2:// values}",
-            "};"
-        ],
-        "description": "Define an enum"
+    "Vorzeichenbehaftet Keyword": {
+        "prefix": "vorzeichenbehaftet",
+        "body": ["vorzeichenbehaftet"],
+        "description": "Signed (sign-bearing)"
     },
-    "Typedef Keyword": {
-        "prefix": "typedef",
-        "body": ["typedef ${1:existingType} ${2:newType};"],
-        "description": "Define a typedef"
+    "Standardfall Keyword": {
+        "prefix": "standardfall",
+        "body": ["standardfall"],
+        "description": "Default case"
     },
-    "Volatile Keyword": {
-        "prefix": "volatile",
-        "body": ["volatile ${1:type} ${2:variableName};"],
-        "description": "Volatile variable declaration"
+    "Springezu Keyword": {
+        "prefix": "springezu",
+        "body": ["springezu"],
+        "description": "Goto (unconditional jump)"
     },
-    "Register Keyword": {
-        "prefix": "register",
-        "body": ["register ${1:type} ${2:variableName};"],
-        "description": "Register variable declaration"
+    "Größewert Keyword": {
+        "prefix": "größewert",
+        "body": ["größewert"],
+        "description": "Sizeof (byte size of type)"
     },
-    "Inline Keyword": {
-        "prefix": "inline",
-        "body": ["inline ${1:returnType} ${2:functionName}(${3:parameters}) {", "    ${4:// code}", "}"],
-        "description": "Inline function definition"
+    "Unvorhersagbar Keyword": {
+        "prefix": "unvorhersagbar",
+        "body": ["unvorhersagbar"],
+        "description": "Volatile (unpredictable access)"
     },
+    "Ausführen Keyword": {
+        "prefix": "ausführen",
+        "body": ["ausführen"],
+        "description": "Do (execute block at least once)"
+    },
+    "Gemeinspeicher Keyword": {
+        "prefix": "gemeinspeicher",
+        "body": ["gemeinspeicher"],
+        "description": "Union (shared memory type)"
+    },
+    "Wertreihe Keyword": {
+        "prefix": "wertreihe",
+        "body": ["wertreihe"],
+        "description": "Enum (named constant values)"
+    },
+    "Typbenennung Keyword": {
+        "prefix": "typbenennung",
+        "body": ["typbenennung"],
+        "description": "Typedef (type alias)"
+    },
+    "Schnellspeicher Keyword": {
+        "prefix": "schnellspeicher",
+        "body": ["schnellspeicher"],
+        "description": "Register (fast-access storage hint)"
+    },
+    "Einfügefunktion Keyword": {
+        "prefix": "einfügefunktion",
+        "body": ["einfügefunktion"],
+        "description": "Inline (insert function body directly)"
+    },
+
     "Single Line Comment": {
         "prefix": "kommentar",
         "body": ["kommentar"],
@@ -270,5 +308,153 @@
         "prefix": "kommentar_block_anfang",
         "body": ["kommentar_block_anfang"],
         "description": "Start of block comment"
+    },
+
+
+    "halt": {
+        "prefix": "halt",
+        "body": ["halt"],
+        "description": "Used for hesitation or uncertainty."
+    },
+    "tja": {
+        "prefix": "tja",
+        "body": ["tja"],
+        "description": "Used as a filler, expressing resignation or contemplation."
+    },
+    "nun": {
+        "prefix": "nun",
+        "body": ["nun"],
+        "description": "Used to start a sentence or to signal a change of topic."
+    },
+    "eben": {
+        "prefix": "eben",
+        "body": ["eben"],
+        "description": "Used for emphasis or to express certainty in a statement."
+    },
+    "schon": {
+        "prefix": "schon",
+        "body": ["schon"],
+        "description": "Indicates something that has already happened or is obvious."
+    },
+    "irgendwie": {
+        "prefix": "irgendwie",
+        "body": ["irgendwie"],
+        "description": "Expresses uncertainty, used to convey that something is uncertain or vague."
+    },
+    "sozusagen": {
+        "prefix": "sozusagen",
+        "body": ["sozusagen"],
+        "description": "Used to indicate a metaphor or approximation, similar to 'so to speak'."
+    },
+    "quasi": {
+        "prefix": "quasi",
+        "body": ["quasi"],
+        "description": "Used to express a sense of approximation or near equivalence."
+    },
+    "vielleicht": {
+        "prefix": "vielleicht",
+        "body": ["vielleicht"],
+        "description": "Indicates uncertainty or possibility."
+    },
+    "ja": {
+        "prefix": "ja",
+        "body": ["ja"],
+        "description": "Used for affirmation or agreement."
+    },
+    "also": {
+        "prefix": "also",
+        "body": ["also"],
+        "description": "Used to introduce a statement or conclusion."
+    },
+    "naja": {
+        "prefix": "naja",
+        "body": ["naja"],
+        "description": "Expresses resignation or a less certain statement."
+    },
+    "achso": {
+        "prefix": "achso",
+        "body": ["achso"],
+        "description": "Used to indicate realization or understanding after an explanation."
+    },
+    "bitte": {
+        "prefix": "bitte",
+        "body": ["bitte"],
+        "description": "Used to express politeness in a request or response."
+    },
+    "ehrlichgesagt": {
+        "prefix": "ehrlichgesagt",
+        "body": ["ehrlichgesagt"],
+        "description": "Used to express honesty or to emphasize a frank opinion."
+    },
+    "kurz": {
+        "prefix": "kurz",
+        "body": ["kurz"],
+        "description": "Indicates a brief statement or introduction."
+    },
+    "jetzt": {
+        "prefix": "jetzt",
+        "body": ["jetzt"],
+        "description": "Emphasizes immediacy or urgency."
+    },
+    "schließlich": {
+        "prefix": "schließlich",
+        "body": ["schließlich"],
+        "description": "Used to signal a conclusion or final point."
+    },
+    "tatsächlich": {
+        "prefix": "tatsächlich",
+        "body": ["tatsächlich"],
+        "description": "Used to express surprise or realization."
+    },
+    "übrigens": {
+        "prefix": "übrigens",
+        "body": ["übrigens"],
+        "description": "Used to introduce an additional, often unrelated point."
+    },
+    "genaugenommen": {
+        "prefix": "genaugenommen",
+        "body": ["genaugenommen"],
+        "description": "Used to emphasize precision in a statement."
+    },
+    "eigentlich": {
+        "prefix": "eigentlich",
+        "body": ["eigentlich"],
+        "description": "Used to convey a relativizing tone, like 'actually'."
+    },
+    "bedauerlicherweise": {
+        "prefix": "bedauerlicherweise",
+        "body": ["bedauerlicherweise"],
+        "description": "Used to express regret or sadness about something."
+    },
+    "sicherlich": {
+        "prefix": "sicherlich",
+        "body": ["sicherlich"],
+        "description": "Indicates certainty or assurance."
+    },
+    "notfalls": {
+        "prefix": "notfalls",
+        "body": ["notfalls"],
+        "description": "Used to indicate the last resort or contingency."
+    },
+    "sowieso": {
+        "prefix": "sowieso",
+        "body": ["sowieso"],
+        "description": "Used to express inevitability or a matter of course."
+    },
+    "mal ehrlich": {
+        "prefix": "mal ehrlich",
+        "body": ["mal ehrlich"],
+        "description": "Used for emphasis or to express honesty, sometimes sarcastically."
+    },
+    "ehm": {
+        "prefix": "ehm",
+        "body": ["ehm"],
+        "description": "ehm"
+    },
+    "hmm": {
+        "prefix": "hmm",
+        "body": ["hmm"],
+        "description": "hmm"
     }
 }
+
