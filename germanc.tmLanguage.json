@@ -3,15 +3,15 @@
   "patterns": [
     {
       "name": "keyword.control.germanc",
-      "match": "\\b(zurück|soferne|andernfalls|während|durchlaufe|unterbrech|weitergehen|gleich|nicht_gleich|größer|kleiner|kleiner_oder_gleich|größer_oder_gleich|und|oder|nicht|strukturen|union|enum|typedef|volatile|register|inline|blockzeitlich|fallunterscheidung|fall|standardfall|springezu|größewert|unvorhersagbar|ausführen|gemeinspeicher|wertreihe|typbenennung|schnellspeicher|einfügefunktion|vorzeichenfrei|vorzeichenbehaftet)\\b"
+      "match": "\\b(zurück|sofern|andernfalls|während|durchlaufe|unterbrech|weitergehen|gleich|nicht_gleich|größer|kleiner|kleiner_oder_gleich|größer_oder_gleich|und|oder|nicht|strukturen|union|enum|typedef|volatile|register|inline|blockzeitlich|blockzeitliches|blockzeitliche|blockzeitlicher|fallunterscheidung|fall|standardfall|springezu|größewert|unvorhersagbar|unvorhersagbare|unvorhersagbarer|unvorhersagbares|ausführen|gemeinspeicher|wertreihe|typbenennung|schnellspeicher|einfügefunktion|vorzeichenfrei|vorzeichenfreie|vorzeichenfreier|vorzeichenfreies|vorzeichenbehaftet|vorzeichenbehaftete|vorzeichenbehafteter|vorzeichenbehaftetes)\\b"
     },
     {
       "name": "keyword.constant.germanc",
-      "match": "\\b(wahr|falsch|null)\\b"
+      "match": "\\b(wahr|wahre|wahrer|wahres|falsch|falsche|falsches|falscher|eventuell|eventuelle|null)\\b"
     },
     {
       "name": "keyword.storage.germanc",
-      "match": "\\b(konstant|extern|statisch|zeichenfolge)\\b"
+      "match": "\\b(konstant|konstante|konstanter|konstantes|extern|externe|externer|externes|statisch|statische|statischer|statisches|zeichenfolge)\\b"
     },
     {
       "name": "meta.preprocessor.germanc",
@@ -38,11 +38,11 @@
     },
     {
       "name": "storage.type.germanc",
-      "match": "\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|bitzeichen|nichtig)\\b"
+      "match": "\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|bitzeichen|nichtig|nichtige|nichtiger|nichtiges)\\b"
     },
     {
       "name": "variable.other.germanc",
-      "match": "(?<=\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|bitzeichen|nichtig)\\s+)\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+      "match": "(?<=\\b(fließkommazahl|doppel|lang|kurz|ganzzahl|bitzeichen|nichtig|nichtige|nichtiger|nichtiges)\\s+)\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
     },
     {
       "name": "entity.name.function.germanc",
@@ -62,8 +62,9 @@
     },
     {
       "name": "keyword.filler.germanc",
-      "match": "\\b(hmm|ehm|halt|tja|nun|eben|schon|irgendwie|sozusagen|quasi|vielleicht|ja|also|naja|achso|bitte|ehrlichgesagt|kurz|jetzt|schließlich|tatsächlich|übrigens|genaugenommen|eigentlich|bedauerlicherweise|sicherlich|notfalls|sowieso|mal ehrlich)\\b"
+      "match": "\\b(hmm|ehm|halt|tja|nun|eben|schon|irgendwie|sozusagen|quasi|vielleicht|ja|also|naja|achso|bitte|ehrlichgesagt|kurz|jetzt|schließlich|tatsächlich|übrigens|genaugenommen|eigentlich|bedauerlicherweise|sicherlich|notfalls|sowieso|mal ehrlich|des weiteren|ich muss ihnen mitteilen|wohl gemerkt|am rande|nebenbei|kleiner hinweis|ach|bloß so|zur info|sei gesagt|kurzer einwurf|nicht vergessen|als randnotiz|by the way|wohlgemerkt)\\b"
     }
+
 
   ],
   "repository": {},

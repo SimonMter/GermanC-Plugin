@@ -15,11 +15,9 @@
         "description": "Return a value"
     },
     "If Statement": {
-        "prefix": "soferne",
+        "prefix": "sofern",
         "body": [
-            "soferne (${1:condition}) {",
-            "    ${2:// code}",
-            "}"
+            "sofern"
         ],
         "description": "If statement"
     },
@@ -53,9 +51,27 @@
     "Void Function": {
         "prefix": "nichtig",
         "body": [
-            "nichtig ${1:functionName}(${2:parameters}) {",
-            "    ${3:// code}",
-            "}"
+            "nichtig"
+        ],
+        "description": "Void function"
+    },
+    "nichtige Function": {
+        "prefix": "nichtige",
+        "body": [
+            "nichtige"
+        ],
+        "description": "Void function"
+    },
+    "Nichtiger Function": {
+        "prefix": "nichtiger",
+        "body": [
+            "nichtiger"
+        ],
+        "description": "Void function"
+    },"Nichtiges Function": {
+        "prefix": "nichtiges",
+        "body": [
+            "nichtiges"
         ],
         "description": "Void function"
     },
@@ -164,9 +180,39 @@
         "body": ["wahr"],
         "description": "Boolean true constant"
     },
+    "wahre Constant": {
+        "prefix": "wahre",
+        "body": ["wahre"],
+        "description": "Boolean true constant"
+    },
+    "wahrer Constant": {
+        "prefix": "wahrer",
+        "body": ["wahrer"],
+        "description": "Boolean true constant"
+    },
+    "wahres Constant": {
+        "prefix": "wahres",
+        "body": ["wahres"],
+        "description": "Boolean true constant"
+    },
     "False Constant": {
         "prefix": "falsch",
         "body": ["falsch"],
+        "description": "Boolean false constant"
+    },
+    "falsches Constant": {
+        "prefix": "falsches",
+        "body": ["falsches"],
+        "description": "Boolean false constant"
+    },
+    "falsche Constant": {
+        "prefix": "falsche",
+        "body": ["falsche"],
+        "description": "Boolean false constant"
+    },
+    "falscher Constant": {
+        "prefix": "falscher",
+        "body": ["falscher"],
         "description": "Boolean false constant"
     },
     "Null Constant": {
@@ -176,27 +222,97 @@
     },
     "Const Keyword": {
         "prefix": "konstant",
-        "body": ["konstant ${1:variableName} = ${2:value};"],
+        "body": ["konstant"],
+        "description": "Declare a constant variable"
+    },
+    "konstante Keyword": {
+        "prefix": "konstante",
+        "body": ["konstante"],
+        "description": "Declare a constant variable"
+    },
+    "konstanter Keyword": {
+        "prefix": "konstanter",
+        "body": ["konstanter"],
+        "description": "Declare a constant variable"
+    },
+    "konstantes Keyword": {
+        "prefix": "konstantes",
+        "body": ["konstantes"],
         "description": "Declare a constant variable"
     },
     "Extern Keyword": {
         "prefix": "extern",
-        "body": ["extern ${1:type} ${2:variableName};"],
+        "body": ["extern"],
+        "description": "Extern variable declaration"
+    },
+    "eventuell Keyword": {
+        "prefix": "eventuell",
+        "body": ["eventuell"],
+        "description": "Extern variable declaration"
+    },
+    "eventuelle Keyword": {
+        "prefix": "eventuelle",
+        "body": ["eventuelle"],
+        "description": "Extern variable declaration"
+    },
+    "externe Keyword": {
+        "prefix": "externe",
+        "body": ["externe"],
+        "description": "Extern variable declaration"
+    },
+    "externer Keyword": {
+        "prefix": "externer",
+        "body": ["externer"],
+        "description": "Extern variable declaration"
+    },
+    "externes Keyword": {
+        "prefix": "externes",
+        "body": ["externes"],
         "description": "Extern variable declaration"
     },
     "Static Keyword": {
         "prefix": "statisch",
-        "body": ["statisch ${1:type} ${2:variableName} = ${3:value};"],
+        "body": ["statisch"],
+        "description": "Static variable declaration"
+    },
+    "statische Keyword": {
+        "prefix": "statische",
+        "body": ["statische"],
+        "description": "Static variable declaration"
+    },
+    "statischer Keyword": {
+        "prefix": "statischer",
+        "body": ["statischer"],
+        "description": "Static variable declaration"
+    },
+    "statisches Keyword": {
+        "prefix": "statisches",
+        "body": ["statisches"],
         "description": "Static variable declaration"
     },
     "String Keyword": {
         "prefix": "zeichenfolge",
-        "body": ["zeichenfolge ${1:variableName} = \"${2:value}\";"],
+        "body": ["zeichenfolge"],
         "description": "String declaration"
     },
     "Auto Keyword": {
         "prefix": "blockzeitlich",
         "body": ["blockzeitlich"],
+        "description": "Auto declaration"
+    },
+    "blockzeitliche Keyword": {
+        "prefix": "blockzeitliche",
+        "body": ["blockzeitliche"],
+        "description": "Auto declaration"
+    },
+    "blockzeitlicher Keyword": {
+        "prefix": "blockzeitlicher",
+        "body": ["blockzeitlicher"],
+        "description": "Auto declaration"
+    },
+    "blockzeitliches Keyword": {
+        "prefix": "blockzeitliches",
+        "body": ["blockzeitliches"],
         "description": "Auto declaration"
     },
     "Switch Keyword": {
@@ -222,9 +338,7 @@
     "Struct Keyword": {
         "prefix": "strukturen",
         "body": [
-            "strukturen ${1:StructName} {",
-            "    ${2:// members}",
-            "};"
+            "strukturen"
         ],
         "description": "Define a struct"
     },
@@ -233,9 +347,39 @@
         "body": ["vorzeichenfrei"],
         "description": "Unsigned (sign-free)"
     },
-    "Vorzeichenbehaftet Keyword": {
+    "vorzeichenfreie Keyword": {
+        "prefix": "vorzeichenfreie",
+        "body": ["vorzeichenfreie"],
+        "description": "Unsigned (sign-free)"
+    },
+    "vorzeichenfreier Keyword": {
+        "prefix": "vorzeichenfreier",
+        "body": ["vorzeichenfreier"],
+        "description": "Unsigned (sign-free)"
+    },
+    "vorzeichenfreies Keyword": {
+        "prefix": "vorzeichenfreies",
+        "body": ["vorzeichenfreies"],
+        "description": "Unsigned (sign-free)"
+    },
+    "vorzeichenbehaftet Keyword": {
         "prefix": "vorzeichenbehaftet",
         "body": ["vorzeichenbehaftet"],
+        "description": "Signed (sign-bearing)"
+    },
+    "vorzeichenbehaftete Keyword": {
+        "prefix": "vorzeichenbehaftete",
+        "body": ["vorzeichenbehaftete"],
+        "description": "Signed (sign-bearing)"
+    },
+    "vorzeichenbehafteter Keyword": {
+        "prefix": "vorzeichenbehafteter",
+        "body": ["vorzeichenbehafteter"],
+        "description": "Signed (sign-bearing)"
+    },
+    "vorzeichenbehaftetes Keyword": {
+        "prefix": "vorzeichenbehaftetes",
+        "body": ["vorzeichenbehaftetes"],
         "description": "Signed (sign-bearing)"
     },
     "Standardfall Keyword": {
@@ -256,6 +400,21 @@
     "Unvorhersagbar Keyword": {
         "prefix": "unvorhersagbar",
         "body": ["unvorhersagbar"],
+        "description": "Volatile (unpredictable access)"
+    },
+    "unvorhersagbarer Keyword": {
+        "prefix": "unvorhersagbarer",
+        "body": ["unvorhersagbarer"],
+        "description": "Volatile (unpredictable access)"
+    },
+    "unvorhersagbare Keyword": {
+        "prefix": "unvorhersagbare",
+        "body": ["unvorhersagbare"],
+        "description": "Volatile (unpredictable access)"
+    },
+    "unvorhersagbares Keyword": {
+        "prefix": "unvorhersagbares",
+        "body": ["unvorhersagbares"],
         "description": "Volatile (unpredictable access)"
     },
     "Ausführen Keyword": {
@@ -288,27 +447,102 @@
         "body": ["einfügefunktion"],
         "description": "Inline (insert function body directly)"
     },
-
-    "Single Line Comment": {
+    "des weiteren": {
+        "prefix": "des weiteren",
+        "body": ["des weiteren"],
+        "description": "The further"
+    },
+    "ich muss ihnen mitteilen": {
+        "prefix": "ich muss ihnen mitteilen",
+        "body": ["ich muss ihnen mitteilen"],
+        "description": "I must you tell"
+    },
+    "wohl gemerkt": {
+        "prefix": "wohl gemerkt",
+        "body": ["wohl gemerkt"],
+        "description": "Well noticed"
+    },
+    "am rande": {
+        "prefix": "am rande",
+        "body": ["am rande"],
+        "description": "At the edge"
+    },
+    "nebenbei": {
+        "prefix": "nebenbei",
+        "body": ["nebenbei"],
+        "description": "Next to it"
+    },
+    "kleiner hinweis": {
+        "prefix": "kleiner hinweis",
+        "body": ["kleiner hinweis"],
+        "description": "Small hint"
+    },
+    "ach": {
+        "prefix": "ach",
+        "body": ["ach"],
+        "description": "Oh yes"
+    },
+    "bloß so": {
+        "prefix": "bloß so",
+        "body": ["bloß so"],
+        "description": "Just so"
+    },
+    "zur info": {
+        "prefix": "zur info",
+        "body": ["zur info"],
+        "description": "To the info"
+    },
+    "sei gesagt": {
+        "prefix": "sei gesagt",
+        "body": ["sei gesagt"],
+        "description": "Be said"
+    },
+    "kurzer einwurf": {
+        "prefix": "kurzer einwurf",
+        "body": ["kurzer einwurf"],
+        "description": "Short throw-in"
+    },
+    "nicht vergessen": {
+        "prefix": "nicht vergessen",
+        "body": ["nicht vergessen"],
+        "description": "Not forget"
+    },
+    "als randnotiz": {
+        "prefix": "als randnotiz",
+        "body": ["als randnotiz"],
+        "description": "As edge note"
+    },
+    "by the way": {
+        "prefix": "by the way",
+        "body": ["by the way"],
+        "description": "By the way"
+    },
+    "kommentar": {
         "prefix": "kommentar",
         "body": ["kommentar"],
         "description": "Single line comment"
     },
-    "Block Comment": {
-        "prefix": "kommentarblock",
-        "body": ["kommentarblock"],
+    "kommentar_block": {
+        "prefix": "kommentar_block",
+        "body": ["kommentar_block"],
         "description": "Block comment"
     },
-    "Block Comment End": {
-        "prefix": "kommentar_block_ende",
-        "body": ["kommentar_block_ende"],
-        "description": "End of block comment"
-    },
-    "Block Comment Start": {
+    "kommentar_block_anfang": {
         "prefix": "kommentar_block_anfang",
         "body": ["kommentar_block_anfang"],
         "description": "Start of block comment"
     },
+    "kommentar_block_ende": {
+        "prefix": "kommentar_block_ende",
+        "body": ["kommentar_block_ende"],
+        "description": "End of block comment"
+    },
+    "wohlgemerkt": {
+        "prefix": "wohlgemerkt",
+        "body": ["wohlgemerkt"],
+        "description": "Well noticed (duplicate alias-spelling)"
+    },
+
 
 
     "halt": {
